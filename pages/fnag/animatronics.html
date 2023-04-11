@@ -1,102 +1,160 @@
 <!DOCTYPE html>
-<html xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882">
-
-<!--HTML and CSS template-->
-
+<html lang="en">
 <head>
-<link rel="icon" href="../pictures/Logo.svg">
-<style> /*CSS Style definitions start here*/
-#container /*Styles for Container*/
-{
-	width:100%;
-	margin: auto; /*Centres the main container*/
-	max-width: 800px;
-	border:1px solid gray;
-	background-color: #3FB0FF;
-}
+    <link rel="icon" href="Logo.png">
+    <title>Crafters Official</title>
+    <style>
+        img {
+         float: left;
+         margin-right: 30px
+        }
 
-#header /*Styles for Header*/
-{
-	padding: 15px;
-	color: #ffffff;
-	font-family: Arial, Verdana, sans-serif;
-      	font-size: 16px;
-	background-color: #003961;
-}
+        .drop-box { 
+            margin-top: 50px;
+         }
 
-#banner 
-{
-	padding:0;
-	margin:0;
-}
+        .drop_button {
+         display: block;
+         width: 100%;
+         padding: 15px;
+         border: none;
+         outline: none;
+         cursor: pointer;
+         background: #3883FC;
+         text-align: left;
+         transition: background 0.2s;
+         font-size: 40px;
+         border-radius: 10px;
+        }
+        
+        .drop_button::after {
+            content: '\25be';
+            float: right;
+            transform: scale(1.5);
+        }
+        
+        .drop_button--active {
+            background: #1930FF;
+        }
+        
+         .drop_button--active::after {
+            content: '\25b4';
+        }
+        
+        .drop_content {
+            overflow: hidden;
+            max-height: 0;
+            transition: max-height 0.2s;
+            
+            padding: 0 15px;
+        }
 
-#navbar
-{
-	float:left; /*Moves the container to the left*/
-	width:160px;
-	margin:0;
-	padding:15px;
-}
+        .page-move {
+            color: #38E3FC;
+            text-decoration: none;
+        }
 
-#content /*Styles for Main Content area*/
-{
-	margin-left:190px;
-	padding:10px;
-	font-family: Arial, Verdana, sans-serif;
-      	font-size: 16px;
-	background-color: #ffffff;
-}
-
-/*Styles for links*/
-a:link    {color: #003961;}
-a:visited {color: #003961;}
-a:hover   {color: #ffffff;}
-a:active  {color: #33ccff;}
-
-</style>
-
-<!--[if gte mso 9]><xml>
-<mso:CustomDocumentProperties>
-<mso:FileHash msdt:dt="string">417dff01f1bfecfeec4457f0b10c3dd24d16fdf1</mso:FileHash>
-<mso:CloudMigratorOriginId msdt:dt="string">1uH7HMNr770JRaoswAirwzGVUDQ0cL_4r</mso:CloudMigratorOriginId>
-<mso:CloudMigratorVersion msdt:dt="string">3.28.7.0</mso:CloudMigratorVersion>
-<mso:MediaServiceImageTags msdt:dt="string"></mso:MediaServiceImageTags>
-<mso:lcf76f155ced4ddcb4097134ff3c332f msdt:dt="string"></mso:lcf76f155ced4ddcb4097134ff3c332f>
-<mso:TaxCatchAll msdt:dt="string"></mso:TaxCatchAll>
-</mso:CustomDocumentProperties>
-</xml><![endif]-->
+        .page-move:visited {
+            color: #38E3FC
+        }
+    </style>    
 </head>
+<body style="padding-top:90px;">
+    <div style="position:fixed; background-color:#38E3FC; top:0px; left:0px; right:0px; padding:10px; margin-bottom:70px;">
+        <img src="Logo.png"">
+        <h1 style="margin-top:30px;">Crafters Official</h1>
+    </div>
 
+        <div style="max-height: 70px; background-color: #3883FC; border-radius: 5px; padding: 10px; margin-right: 20px; top: 30px; right: 150px; position: fixed;">
+            <a class="page-move" style="font-size: 40px;" href="https://scsupercraft.github.io/Crafters-Official/">Home</a>
+        </div>
 
-<body> <!--Main site content begins here-->
-<div id="container"> <!--Page container-->
+        <div style="max-height: 70px; background-color: #3883FC; border-radius: 5px; padding: 10px; top: 30px; right: 20px; position: fixed;">
+            <a class="page-move" style="font-size: 40px;" href="pages/games">Games</a>
+        </div>
 
-<div id="header"> <!--Main header-->
-  <h1 id="banner">FNAG</h1>
-</div>
+    <div class="drop-box" style="padding:30px; font-size:40px; background-color:#38E3FC; border-radius:10px; max-width:600px;">
+        <button style="font-size: 60px;" type="button" class="drop_button">Mannequin</button>
+        <div class="drop_content">
+        
+	
+	
+        </div>                       
+     </div>
+				 
+     <div class="drop-box" style="padding:30px; font-size:40px; background-color:#38E3FC; border-radius:10px; max-width:600px;">
+        <button style="font-size: 60px;" type="button" class="drop_button">El Macho</button>
+        <div class="drop_content">
+        
+	
+	
+        </div>                       
+     </div>
+				 
+     <div class="drop-box" style="padding:30px; font-size:40px; background-color:#38E3FC; border-radius:10px; max-width:600px;">
+        <button style="font-size: 60px;" type="button" class="drop_button">Gru</button>
+        <div class="drop_content">
+        
+	
+	
+        </div>                       
+     </div>
+    
+     <div class="drop-box" style="padding:30px; font-size:40px; background-color:#38E3FC; border-radius:10px; max-width:600px;">
+        <button style="font-size: 60px;" type="button" class="drop_button">Dr Nefario</button>
+        <div class="drop_content">
+        
+	
+	
+        </div>                       
+     </div>
+				 
+     <div class="drop-box" style="padding:30px; font-size:40px; background-color:#38E3FC; border-radius:10px; max-width:600px;">
+        <button style="font-size: 60px;" type="button" class="drop_button">Agnes</button>
+        <div class="drop_content">
+        
+	
+	
+        </div>                       
+     </div>
+				 
+     <div class="drop-box" style="padding:30px; font-size:40px; background-color:#38E3FC; border-radius:10px; max-width:600px;">
+        <button style="font-size: 60px;" type="button" class="drop_button">Vector</button>
+        <div class="drop_content">
+        
+	
+	
+        </div>                       
+     </div>
+				 
+     <div class="drop-box" style="padding:30px; font-size:40px; background-color:#38E3FC; border-radius:10px; max-width:600px;">
+        <button style="font-size: 60px;" type="button" class="drop_button">Lucy</button>
+        <div class="drop_content">
+        
+	
+	
+        </div>                       
+     </div>
+				
+    <div style="bottom:30px; position:fixed; font-size:50px; right:30px; background-color:#3883FC; border-radius:10px; padding:20px;">                                   
+    <a style="color: #38E3FC; text-decoration: none;" href="mailto:CraftersOffical@outlook.com">Contact Us</a>                                                              
+    </div>
+                                                                                                                   
+    <script>
+        document.querySelectorAll('.drop_button').forEach(button => {
 
-<div id="navbar"> <!--Navigation bar-->
-  <p>
-  <nav>
-  <a href="Page1.html">About</a> <br>
-  <a href="Page2.html">Credits</a><br>
-  <a href="Page3.html">Mannequin</a><br>
-  <a href="Page4.html">El Macho</a><br>
-  <a href="Page5.html">Gru</a>
-  </nav>
-  </p>
-</div>
-
-<div id="content"> <!--Main content-->
-  <h2>Mannequin</h2>
-  <hr> <!--Creates a horizontal rule-->
-  <img src=../pictures/animatronics_0.svg>
-  <p>The mannequin was created for testing purposses</p> <!--Empty paragraphs-->
-  <p>It can move around the resturant to rooms: 1, 2, 6, 8 Starting in room 6</p>
-  <p>It is in custom night</p>
-</div>
-
-</div> <!--Closing container div-->
-
+            button.addEventListener('click', () => {
+                       const dropContent = button.nextElementSibling;
+                                 
+                       button.classList.toggle('drop_button--active');
+                                 
+                       if (button.classList.contains('drop_button--active')) {
+                            dropContent.style.maxHeight = dropContent.scrollHeight + 'px';          
+                       } else {
+                            dropContent.style.maxHeight = 0;         
+                       }
+                                 });                         
+        });                      
+    </script>
 </body>
 </html>
