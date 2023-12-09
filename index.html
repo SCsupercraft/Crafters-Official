@@ -1,52 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Page Logo -->
+
     <link rel="icon" href="Logo.png">
-    <title>Crafters Official</title>
+
+    <!-- Styles -->
+
+    <link rel="stylesheet" href="utils/fonts.css">
+    <link rel="stylesheet" href="utils/drop-box/main.css">
+
     <style>
         img {
          float: left;
          margin-right: 30px
-        }
-
-        .drop-box { 
-            margin-top: 50px;
-         }
-
-        .drop_button {
-         display: block;
-         width: 100%;
-         padding: 15px;
-         border: none;
-         outline: none;
-         cursor: pointer;
-         background: #3883FC;
-         text-align: left;
-         transition: background 0.2s;
-         font-size: 40px;
-         border-radius: 10px;
-        }
-        
-        .drop_button::after {
-            content: '\25be';
-            float: right;
-            transform: scale(1.5);
-        }
-        
-        .drop_button--active {
-            background: #1930FF;
-        }
-        
-         .drop_button--active::after {
-            content: '\25b4';
-        }
-        
-        .drop_content {
-            overflow: hidden;
-            max-height: 0;
-            transition: max-height 0.2s;
-            
-            padding: 0 15px;
         }
 
         .page-move {
@@ -57,9 +24,16 @@
         .page-move:visited {
             color: #38E3FC
         }
-    </style>    
+    </style>
+
+    <!-- Page Title -->
+
+    <title>Crafters Official</title>
+
 </head>
-<body style="padding-top:90px;">
+<body style="padding-top:90px;", class="font1">
+    <!-- Website Content -->
+
     <div style="position:fixed; background-color:#38E3FC; top:0px; left:0px; right:0px; padding:10px; margin-bottom:70px;">
         <img src="Logo.png"">
         <h1 style="margin-top:30px;">Crafters Official</h1>
@@ -76,35 +50,29 @@
     <div class="drop-box" style="padding:30px; font-size:40px; background-color:#38E3FC; border-radius:10px; max-width:600px;">
         <button style="font-size: 60px;" type="button" class="drop_button">Games</button>
         <div class="drop_content">
+             <br>
+             <a href="pages/games">
+                See All
+             </a>
+             <h4 style="font-size: 70px;">Featured</h4>
              <a href="pages/fnag">
              Five Nights At Gru's <br>
              </a>
              <br>
-             <a href="pages/games">
-             More Info
+             <a href="pages/block-lands">
+                Block Lands <br>
              </a>
+             <br>
         </div>                         
     </div>
     
     <div style="bottom:30px; position:fixed; font-size:50px; right:30px; background-color:#3883FC; border-radius:10px; padding:20px;">                                   
     <a style="color: #38E3FC; text-decoration: none;" href="mailto:CraftersOffical@outlook.com">Contact Us</a>                                                              
     </div>
-                                                                                                                   
-    <script>
-        document.querySelectorAll('.drop_button').forEach(button => {
 
-            button.addEventListener('click', () => {
-                       const dropContent = button.nextElementSibling;
-                                 
-                       button.classList.toggle('drop_button--active');
-                                 
-                       if (button.classList.contains('drop_button--active')) {
-                            dropContent.style.maxHeight = dropContent.scrollHeight + 'px';          
-                       } else {
-                            dropContent.style.maxHeight = 0;         
-                       }
-                                 });                         
-        });                      
-    </script>
+    <!-- Scripts -->
+
+    <script type='text/javascript' src="utils/drop-box/main.js"></script>
+
 </body>
 </html>
