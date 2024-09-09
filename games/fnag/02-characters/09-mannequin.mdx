@@ -1,0 +1,55 @@
+---
+description: '???'
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+import Admonition from '@theme/Admonition';
+import { Box } from '/src/components/content';
+
+# The Mannequin
+
+<div style={{ display: 'table-cell', paddingRight: 30 }}>
+	<Box>
+		<Tabs queryString="state">
+			<TabItem
+				value="locked"
+				label="Locked"
+			>
+				<img
+					src="../../img/fnag/_mannequin.svg"
+					width="120"
+					style={{
+						marginTop: 3,
+						display: 'block',
+						marginLeft: 'auto',
+						marginRight: 'auto',
+					}}
+				></img>
+			</TabItem>
+			<TabItem
+				value="unlocked"
+				label="Unlocked"
+			>
+				<img
+					src="../../img/fnag/mannequin.svg"
+					width="120"
+					style={{
+						display: 'block',
+						marginLeft: 'auto',
+						marginRight: 'auto',
+					}}
+				></img>
+			</TabItem>
+		</Tabs>
+	</Box>
+</div>
+<div style={{ display: 'table-cell', position: 'relative' }}>
+	<p style={{ position: 'absolute', top: 0, width: 'max-content' }}>
+		<Admonition type="info">
+			The mannequin was originally created for testing purposses but then
+			added as an easter egg.
+		</Admonition>
+		The mannequin starts in the storage room (room 6).
+	</p>
+</div>

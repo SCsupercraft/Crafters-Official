@@ -1,0 +1,24 @@
+announcement:
+    label: Announcement
+    permalink: /announcements
+    description: Important announcements
+
+update:
+    label: Updates
+    permalink: /updates
+    description: Updates
+
+new:
+    label: New Release
+    permalink: /new-releases
+    description: New releases
+
+fnag:
+    label: Five Nights At Gru's
+    permalink: /fnag
+    description: Anything to do with Five Nights At Gru's
+
+block-lands:
+    label: Block Lands
+    permalink: /block-lands
+    description: Anything to do with Block Lands
