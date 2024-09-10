@@ -161,6 +161,10 @@ const config = {
 								label: 'GitHub',
 								href: 'https://github.com/SCsupercraft/Crafters-Official',
 							},
+							{
+								label: 'Contact Us',
+								href: 'mailto:CraftersOfficial@outlook.com',
+							},
 						],
 					},
 				],
