@@ -4,13 +4,23 @@ toc_max_heading_level: 2
 
 # Changelog
 
+## V1.2 {#v1.2}
+
+:::note
+This version is currently only available as a scratch project
+:::
+
+### Changed {#changed-in-v1.2}
+
+-   The movement system should work similarly to the one from FNAF
+
 ## V1.1 {#v1.1}
 
 :::note
 This version is currently only available as a scratch project
 :::
 
-### Fixed {#fixed-in-v0.1.1}
+### Fixed {#fixed-in-v1.1}
 
 -   Fixed a bug where the map would flicker
 
